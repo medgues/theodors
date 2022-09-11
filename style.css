@@ -1,0 +1,651 @@
+@import url("https://fonts.googleapis.com/css2?family=Mouse+Memoirs&display=swap");
+
+body {
+  font-family: Mouse Memoirs;
+}
+
+a {
+  text-decoration: none;
+  color: navy;
+  font-family: Mouse Memoirs;
+  font-size: xx-large;
+}
+p {
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+
+.hero {
+  display: flex;
+  background: linear-gradient(
+      to bottom,
+      rgba(76, 74, 226, 0.2) 40%,
+      rgba(74, 79, 226, 0.4)
+    ),
+    url(https://assets.codepen.io/8511583/math.webp);
+  background-size: cover;
+}
+
+/* For Desktop */
+.fotoOfMe {
+  display: none;
+}
+
+/* For Mobile */
+.fotoOfMe2 {
+  width: 100%;
+  height: auto;
+}
+
+.navbar-container {
+  background-color: #e5e5f7;
+  opacity: 1;
+}
+
+.logosection {
+  padding: 0rem 1rem;
+}
+.navbar-container input[type="checkbox"],
+.navbar-container .logosection {
+  display: block;
+}
+
+.navbar-container {
+  display: block;
+  position: relative;
+  height: 64px;
+}
+
+.bi-x-circle {
+  cursor: pointer;
+  position: absolute;
+  right: 14px;
+  top: -14px;
+}
+
+.navbar-container input[type="radio"] {
+  position: absolute;
+  display: block;
+  height: 46px;
+  width: 46px;
+  top: 4px;
+  left: 8px;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+#closeBtn {
+  position: absolute;
+  display: block;
+  height: 32px;
+  width: 30px;
+  top: -17px;
+  right: 12px;
+  left: auto;
+  z-index: 5;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.navbar .menu-items {
+  padding-top: 30px;
+  background-color: #e5e5f7;
+  opacity: 1;
+  height: 100vh;
+  max-width: 300px;
+  transform: translate(-150%);
+  display: flex;
+  flex-direction: column;
+  margin-left: -40px;
+  padding-left: 50px;
+  transition: transform 0.5s ease-in-out;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 5px 0px 10px 5px rgba(0,0,0,0.4);
+}
+.h-text {
+  font-family: Mouse Memoirs;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.navbar .menu-items > div {
+  position: relative;
+  font-size: 1.8rem;
+  margin-left: 1rem;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.logo {
+  position: absolute;
+  bottom: 16px;
+  height: 36px;
+  width: 36px;
+}
+
+/* Translate menu-items to the right (0px = starting point) when the input is checked */
+.toggleBtn:checked ~ .menu-items {
+  transform: translateX(0);
+}
+
+.toggleBtn:not(:checked) ~ .menu-items {
+  transform: translateX(-150%);
+}
+
+.fotoOfMe {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  cursor: crosshair;
+}
+
+.fotoOfMe {
+  width: 80%;
+  height: auto;
+}
+
+.hr {
+  margin: 0;
+  height: 10px;
+  background-color: black;
+}
+
+#aboutDiv {
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+    radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 0;
+}
+
+#aboutDiv p {
+  color: black;
+  font-family: Mouse Memoirs;
+  font-size: xx-large;
+  width: 80%;
+  margin: auto;
+}
+
+#offer {
+  color: black;
+  background-color: #e5e5f7;
+  opacity: 0.8;
+  background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+  background-size: 10px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0;
+}
+
+#offer p {
+  color: black;
+  font-family: Mouse Memoirs;
+  font-size: xx-large;
+  width: 80%;
+  margin: 1rem auto;
+}
+
+h2 {
+  font-family: Mouse Memoirs;
+  font-size: xx-large;
+}
+
+#kontakt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(219, 239, 250, 1);
+  opacity: 0.8;
+  background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+  background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+  font-family: Mouse Memoirs;
+  padding: 2rem;
+  width: 100%;
+}
+
+#kontakt > form > div {
+  margin-top: 1rem;
+  font-family: Mouse Memoirs;
+}
+#phone-kontakt > div:nth-of-type(2) {
+  position: relative;
+  font-size: small;
+}
+#rectangle2 {
+  position: absolute;
+  top: 9px;
+  left: 9px;
+}
+#phone {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+.kontakt-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#phone-container {
+  position: relative;
+}
+#phone-kontakt {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+#impressum {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  height: auto;
+  color: white;
+  font-family: Mouse Memoirs;
+  background-color: black;
+  opacity: 0.8;
+  background-size: 10px 10px;
+  padding: 16px;
+}
+.information > div {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  gap: 2rem;
+}
+.footer-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 8px;
+}
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.quick-links {
+  max-width: 30%;
+}
+.discription {
+  max-width: 30%;
+}
+.information {
+  max-width: 30%;
+}
+.footer-footer > div:nth-of-type(2){
+  display: flex;
+  gap: 2rem;
+}
+
+#aboutDiv > p {
+  margin: 1rem auto;
+}
+.form > div:nth-of-type(3)> button{
+  border: none;
+  border-radius: 12px;
+  padding: .9rem 2rem;
+  color: white;
+  font-weight: 700;
+  background-color: blueviolet;
+}
+.discription > img {
+  width: 60px;
+  height: auto;
+}
+
+/*Whiteboard*/
+
+.container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Desktop view */
+@media (min-width: 900px) {
+  .toggleBtn {
+    display: none;
+  }
+  .bi-x-circle {
+    display: none;
+  }
+
+  .logosection {
+    display: none;
+  }
+
+  /* Translate menu-items to the right (0px = starting point) when the input is checked */
+  .toggleBtn:checked ~ .menu-items {
+    transform: none;
+  }
+
+  .toggleBtn:not(:checked) ~ .menu-items {
+    transform: none;
+  }
+
+  .navbar .menu-items {
+    padding-top: 0;
+    background: transparent;
+    align-items: center;
+    height: auto;
+    max-width: 100%;
+    transform: none;
+    display: block;
+    flex-direction: row;
+    transition: transform 0.5s ease-in-out;
+    box-shadow: none;
+    position: relative;
+    padding-right: 0;
+  }
+
+  .navbar .menu-items > div {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    flex-direction: row;
+  }
+
+  .navbar .menu-items > div a {
+    margin-bottom: 0;
+    font-size: 1.8rem;
+    width: 7rem;
+    font-weight: 700;
+    color: navy;
+  }
+
+  .sprache {
+    width: 1rem;
+    padding: 0;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    cursor: crosshair;
+  }
+
+  .hero {
+    display: flex;
+    justify-content: flex-end;
+    background: linear-gradient(
+        to bottom,
+        rgba(122, 186, 221, 0.4) 40%,
+        rgba(74, 79, 226, 0.4)
+      ),
+      url(img/math.webp);
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    margin: 0 25px 25px 25px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  .fotoOfMe2 {
+    display: none;
+  }
+
+  .fotoOfMe {
+    display: flex;
+  }
+
+  #checky {
+    display: none;
+  }
+
+  .navbar-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: royalblue;
+    padding: 1rem;
+    gap: 1rem;
+    font-family: Mouse Memoirs;
+    color: white;
+    height: 35px;
+    background-color: white;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .menu-items {
+    padding-right: 5%;
+  }
+
+  .menu-items a {
+    padding-right: 3%;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .menu-items a:hover {
+    animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+  }
+
+  @keyframes shake {
+    10%,
+    90% {
+      transform: translate3d(-1px, 0, 0) scale(1.5);
+    }
+
+    20%,
+    80% {
+      transform: translate3d(2px, 0, 0) scale(1.5);
+    }
+
+    30%,
+    50%,
+    70% {
+      transform: translate3d(-4px, 0, 0) scale(1.5);
+    }
+
+    40%,
+    60% {
+      transform: translate3d(4px, 0, 0) scale(1.5);
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: right;
+    gap: 2rem;
+  }
+
+  li a {
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+  }
+
+  .fotoOfMe {
+    width: auto;
+    height: auto;
+  }
+
+  .hr {
+    margin: 0;
+    height: 10px;
+    background-color: black;
+  }
+
+  #aboutDiv {
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, transparent 0.5px),
+      radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0;
+    margin: 0 auto;
+    height: 100%;
+    padding: 0 0 5px 0;
+    margin: 50px 25px 25px 25px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+
+  #aboutDiv p {
+    color: black;
+    font-family: Mouse Memoirs;
+    font-size: xx-large;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  #offer {
+    color: black;
+    background-color: #e5e5f7;
+    opacity: 0.8;
+    background-image: radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 0 25px 0;
+    margin: 50px 25px 25px 25px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #offer:hover {
+  }
+
+  #offer p {
+    color: black;
+    font-family: Mouse Memoirs;
+    font-size: x-large;
+    width: 80%;
+    margin: 1rem auto;
+  }
+
+  h2 {
+    font-family: Mouse Memoirs;
+    font-size: xx-large;
+  }
+
+  #kontakt {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: (219, 239, 250, 1);
+    opacity: 0.8;
+    background-size: 50px 50px, 50px 50px, 10px 10px, 10px 10px;
+    background-position: -2px -2px, -2px -2px, -1px -1px, -1px -1px;
+    font-family: Mouse Memoirs;
+    padding: 2rem;
+    height: 300px;
+    padding: 0 0 15px 0;
+    margin: 50px 25px 25px 25px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #form {
+    background-color: white;
+    padding: 25px 25px 25px 25px;
+    border-radius: 20px;
+    position: absolute;
+    width: 840px;
+    left: 240px;
+    top: 136px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  }
+  #kontakt-txt {
+    padding-bottom: 150px;
+    font-family: Mouse Memoirs;
+    font-size: x-large;
+    text-align: center;
+  }
+
+  #kontakt > form > div {
+    margin-top: 1rem;
+    font-family: Mouse Memoirs;
+  }
+
+  #impressum {
+    display: flex;
+    flex-direction: column;
+    font-family: Mouse Memoirs;
+    color: white;
+    background-color: black;
+    opacity: 0.8;
+    margin-top: 250px;
+    padding-top: 32px;
+  }
+
+  #img {
+    margin: 8px 0 8px 0;
+  }
+
+  .quick-links > div:nth-of-type(1) {
+    display: flex;
+    flex-direction: column;
+    margin-top: 16px;
+    gap: 8px;
+  }
+  .address {
+    display: flex;
+    flex-direction: column;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+  }
+
+  .button {
+    background-color: rgba(88, 63, 188, 1);
+  }
+  .hr{
+    display: none;
+  }
+}
